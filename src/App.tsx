@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from '../Layout';
-import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import OfferingsPage from './pages/OfferingsPage';
-import ContactPage from './pages/ContactPage';
-import OfferingDetailPage from './pages/OfferingDetailPage';
+import HomePage from '../HomePage';
+import AboutPage from '../AboutPage';
+import OfferingsPage from '../OfferingsPage';
+import ContactPage from '../ContactPage';
+import OfferingDetailPage from '../OfferingDetailPage';
 import { offerings } from './data/offerings';
 
 function App() {
