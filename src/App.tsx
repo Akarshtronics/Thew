@@ -5,7 +5,7 @@ import AboutPage from '../AboutPage';
 import OfferingsPage from '../OfferingsPage';
 import ContactPage from '../ContactPage';
 import OfferingDetailPage from '../OfferingDetailPage';
-import { offerings } from './data/offerings';
+import { offerings } from '../offerings';
 
 function App() {
   return (

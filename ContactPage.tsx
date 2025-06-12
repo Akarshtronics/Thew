@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ContactForm from '../components/ContactForm';
-import ContactInfo from '../components/ContactInfo';
-import SectionTitle from '../components/SectionTitle';
+import ContactForm from './ContactForm';
+import ContactInfo from './ContactInfo';
+import SectionTitle from './SectionTitle';
 
 const ContactPage = () => {
   React.useEffect(() => {

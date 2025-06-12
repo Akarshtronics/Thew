@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SectionTitle from '../components/SectionTitle';
-import CTASection from '../components/CTASection';
+import SectionTitle from './SectionTitle';
+import CTASection from './CTASection';
 
 const AboutPage = () => {
   React.useEffect(() => {
@@ -12,7 +12,7 @@ const AboutPage = () => {
     {
       name: "Akarsh Pandey",
       role: "Founder | STEM Innovation Lead",
-      bio: "A dynamic leader revolutionizing STEM education through experiential learning and cutting-edge technology. With deep expertise in robotics, coding, and innovation-driven pedagogy, founded The World of Innovation & Creativity to empower students with 21st-century skills and a maker’s mindset.",
+      bio: "A dynamic leader revolutionizing STEM education through experiential learning and cutting-edge technology. With deep expertise in robotics, coding, and innovation-driven pedagogy, founded The World of Innovation & Creativity to empower students with 21st-century skills and a maker's mindset.",
       social: {
         linkedin: "https://www.linkedin.com/in/akarsh-pandey-94786924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       }
@@ -28,7 +28,7 @@ const AboutPage = () => {
     {
       name: "Shalini Bisht",
       role: "Head of Product | Outreach & Partnership Coordinator",
-      bio: "Shalini is driving product innovation at Twinc, building hands-on STEM experiences that spark curiosity and confidence in young learners. With a passion for education and a builder’s mindset, she turns big ideas into learner-focused tools that make STEM fun, accessible, and impactful.",
+      bio: "Shalini is driving product innovation at Twinc, building hands-on STEM experiences that spark curiosity and confidence in young learners. With a passion for education and a builder's mindset, she turns big ideas into learner-focused tools that make STEM fun, accessible, and impactful.",
       social: {
         linkedin: "https://www.linkedin.com/in/shalini-b-356701165?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       }

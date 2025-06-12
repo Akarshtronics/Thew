@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import SectionTitle from '../components/SectionTitle';
-import OfferingCard from '../components/OfferingCard';
-import { offerings } from '../data/offerings';
-import CTASection from '../components/CTASection';
+import SectionTitle from './SectionTitle';
+import OfferingCard from './OfferingCard';
+import { offerings } from './offerings';
+import CTASection from './CTASection';
 
 const OfferingsPage = () => {
   React.useEffect(() => {

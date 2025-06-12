@@ -1,11 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import SectionTitle from '../components/SectionTitle';
-import { offerings } from '../data/offerings';
+import SectionTitle from './SectionTitle';
+import { offerings } from './offerings';
 import { Link } from 'react-router-dom';
 import { ChevronRight, CheckCircle, Clock, Users, Calendar } from 'lucide-react';
-import CTASection from '../components/CTASection';
+import CTASection from './CTASection';
 
 interface OfferingDetailPageProps {
   offeringId: number;
