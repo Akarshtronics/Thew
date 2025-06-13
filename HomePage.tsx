@@ -1,10 +1,10 @@
 import React from 'react';
-import Hero from './components/Hero';
-import NeedSection from './components/NeedSection';
-import WhyUsSection from './components/WhyUsSection';
-import OfferingsSection from './components/OfferingsSection';
-import KeyRolesSection from './components/KeyRolesSection';
-import CTASection from './components/CTASection';
+import Hero from './Hero';
+import NeedSection from './NeedSection';
+import WhyUsSection from './WhyUsSection';
+import OfferingsSection from './OfferingsSection';
+import KeyRolesSection from './KeyRolesSection';
+import CTASection from './CTASection';
 
 const HomePage = () => {
   React.useEffect(() => {
