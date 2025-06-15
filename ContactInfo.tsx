@@ -6,7 +6,7 @@ const ContactInfo = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      details: ["support@twinc.in"],
+      details: ["supports@twinc.in"],
       action: {
         text: "Send an Email",
         url: "mailto:info@innovationcreativity.org"
