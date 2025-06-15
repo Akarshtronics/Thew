@@ -161,7 +161,7 @@ const Footer = () => {
                   },
                   {
                     icon: Mail,
-                    content: "support@twinc.in",
+                    content: "supports@twinc.in",
                     href: "mailto:support@twinc.in"
                   }
                 ].map((contact, index) => (
