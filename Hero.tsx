@@ -82,29 +82,6 @@ const Hero = () => {
                 </span>
               </Link>
             </motion.div>
-            
-            {/* Stats Row */}
-            <motion.div 
-              className="mt-8 sm:mt-12 lg:mt-16 grid grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.9 }}
-            >
-              {[
-                { number: "1000+", label: "Students" },
-                { number: "15+", label: "Programs" },
-                { number: "98%", label: "Success Rate" }
-              ].map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-accent-400 mb-1">
-                    {stat.number}
-                  </div>
-                  <div className="text-xs sm:text-sm lg:text-base text-neutral-300">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </motion.div>
           </motion.div>
           
           <motion.div
