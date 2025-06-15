@@ -56,7 +56,7 @@ const WhyUsSection = () => {
           >
             <div className="relative z-10">
               <img 
-                src="https://github.com/akarshpandey/twinc/blob/main/Your%20paragraph%20text.png?raw=true"
+                src="https://github.com/akarshpandey/twinc/blob/main/Methodology.jpeg?raw=true"
                 alt="Students collaborating on STEM projects" 
                 className="w-full h-auto rounded-lg shadow-xl"
               />
