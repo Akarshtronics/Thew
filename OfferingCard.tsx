@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Clock, Users } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 interface OfferingCardProps {
   id: number;
@@ -51,18 +51,6 @@ const OfferingCard = ({
             {icon}
           </div>
         </motion.div>
-        
-        {/* Quick Stats */}
-        <div className="absolute top-4 right-4 flex space-x-2">
-          <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-medium text-neutral-700 flex items-center">
-            <Clock className="w-3 h-3 mr-1" />
-            8-12 weeks
-          </div>
-          <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg text-xs font-medium text-neutral-700 flex items-center">
-            <Users className="w-3 h-3 mr-1" />
-            Max 12
-          </div>
-        </div>
       </div>
       
       {/* Content */}
@@ -99,22 +87,6 @@ const OfferingCard = ({
             <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1 group-hover:translate-x-2" />
           </Link>
         </motion.div>
-        
-        {/* Progress Bar */}
-        <div className="mt-4 sm:mt-6">
-          <div className="flex justify-between text-xs text-neutral-500 mb-2">
-            <span>Enrollment Status</span>
-            <span>Available</span>
-          </div>
-          <div className="w-full bg-neutral-200 rounded-full h-2">
-            <motion.div 
-              className="bg-gradient-to-r from-primary-500 to-secondary-500 h-2 rounded-full"
-              initial={{ width: 0 }}
-              whileInView={{ width: "75%" }}
-              transition={{ duration: 1, delay: delay + 0.6 }}
-            />
-          </div>
-        </div>
       </div>
       
       {/* Hover Effect Overlay */}
