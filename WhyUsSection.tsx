@@ -58,7 +58,7 @@ const WhyUsSection = () => {
               <img 
                 src="https://github.com/akarshpandey/twinc/blob/main/Methodology.jpeg?raw=true"
                 alt="Students collaborating on STEM projects" 
-                className="w-full h-auto rounded-lg shadow-xl"
+                className="w-full h-64 sm:h-72 lg:h-80 rounded-lg shadow-xl object-cover"
               />
             </div>
           </motion.div>

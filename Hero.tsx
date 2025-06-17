@@ -90,12 +90,12 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             className="order-1 lg:order-2 relative"
           >
-            <div className="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl floating-animation">
+            <div className="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl floating-animation max-w-md mx-auto">
               <div className="aspect-w-16 aspect-h-12 sm:aspect-h-10">
                 <img 
                   src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
                   alt="Students engaged in STEM learning activities" 
-                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" 
+                  className="w-full h-64 sm:h-72 lg:h-80 object-cover transform hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               

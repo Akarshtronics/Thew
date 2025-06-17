@@ -30,7 +30,7 @@ const OfferingCard = ({
       whileHover={{ scale: 1.02 }}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden h-48 sm:h-56 lg:h-64">
+      <div className="relative overflow-hidden h-40 sm:h-44 lg:h-48">
         <motion.img 
           src={image} 
           alt={title}
@@ -43,20 +43,20 @@ const OfferingCard = ({
         
         {/* Icon Badge */}
         <motion.div 
-          className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm p-2 sm:p-3 rounded-xl shadow-lg"
+          className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg"
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="w-5 h-5 sm:w-6 sm:h-6 text-primary-500">
+          <div className="w-4 h-4 sm:w-5 sm:h-5 text-primary-500">
             {icon}
           </div>
         </motion.div>
       </div>
       
       {/* Content */}
-      <div className="p-4 sm:p-6 lg:p-8">
+      <div className="p-4 sm:p-5 lg:p-6">
         <motion.h3 
-          className="text-lg sm:text-xl lg:text-2xl font-semibold mb-2 sm:mb-3 text-neutral-800 group-hover:text-primary-700 transition-colors duration-300"
+          className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-neutral-800 group-hover:text-primary-700 transition-colors duration-300"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: delay + 0.2 }}
@@ -65,7 +65,7 @@ const OfferingCard = ({
         </motion.h3>
         
         <motion.p 
-          className="text-sm sm:text-base text-neutral-600 mb-4 sm:mb-6 leading-relaxed line-clamp-3"
+          className="text-sm sm:text-base text-neutral-600 mb-4 sm:mb-5 leading-relaxed line-clamp-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: delay + 0.3 }}

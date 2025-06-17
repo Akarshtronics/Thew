@@ -118,7 +118,7 @@ const OfferingsPage = () => {
               <img 
                 src="https://github.com/akarshpandey/twinc/blob/main/Twinc3.png?raw=true" 
                 alt="Students working on a project" 
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-full h-64 sm:h-72 lg:h-80 object-cover"
               />
             </motion.div>
           </div>
@@ -159,7 +159,7 @@ const OfferingsPage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-40 overflow-hidden">
                   <img 
                     src={feature.image} 
                     alt={feature.title} 
