@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from './SectionTitle';
 import { offerings } from './offerings';
 import { Link } from 'react-router-dom';
-import { ChevronRight, CheckCircle, Clock, Users, Calendar } from 'lucide-react';
+import { ChevronRight, CheckCircle, Calendar } from 'lucide-react';
 import CTASection from './CTASection';
 
 interface OfferingDetailPageProps {
@@ -81,21 +81,7 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
                 {offering.overview || "Our comprehensive program provides students with hands-on experience and theoretical knowledge, preparing them for future success in this exciting field."}
               </p>
               
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                <div className="flex items-center p-4 bg-neutral-50 rounded-lg">
-                  <Clock className="w-5 h-5 text-primary-500 mr-3" />
-                  <div>
-                    <div className="text-sm text-neutral-500">Duration</div>
-                    <div className="font-medium">8-12 Weeks</div>
-                  </div>
-                </div>
-                <div className="flex items-center p-4 bg-neutral-50 rounded-lg">
-                  <Users className="w-5 h-5 text-primary-500 mr-3" />
-                  <div>
-                    <div className="text-sm text-neutral-500">Class Size</div>
-                    <div className="font-medium">Max 12 Students</div>
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 gap-4 mb-8">
                 <div className="flex items-center p-4 bg-neutral-50 rounded-lg">
                   <Calendar className="w-5 h-5 text-primary-500 mr-3" />
                   <div>
