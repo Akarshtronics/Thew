@@ -13,33 +13,24 @@ const AboutPage = () => {
       name: "Akarsh Pandey",
       role: "Founder | STEM Innovation Lead",
       bio: "A dynamic leader revolutionizing STEM education through experiential learning and cutting-edge technology. With deep expertise in robotics, coding, and innovation-driven pedagogy, founded The World of Innovation & Creativity to empower students with 21st-century skills and a maker's mindset.",
-      social: {
-        linkedin: "https://www.linkedin.com/in/akarsh-pandey-94786924a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-      }
     },
     {
       name: "Manish Anand",
       role: "Program Director | Technology Integration Specialist",
       bio: "Experienced in Adobe, Oracle and Accenture As full stack developer have some certification CCNA CISSP from Cisco blue team badges of CEH from EC- council Vast experience in iot project deployment",
-      social: {
-        linkedin: "#",
-      }
+      
     },
     {
       name: "Shalini Bisht",
       role: "Head of Product | Outreach & Partnership Coordinator",
       bio: "Shalini is driving product innovation at Twinc, building hands-on STEM experiences that spark curiosity and confidence in young learners. With a passion for education and a builder's mindset, she turns big ideas into learner-focused tools that make STEM fun, accessible, and impactful.",
-      social: {
-        linkedin: "https://www.linkedin.com/in/shalini-b-356701165?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-      }
+      
     },
     {
       name: "Khushbu Mathur",
       role: "Director – Research & Curriculum Innovation",
       bio: " With experience spanning STEAM education and software development, she brings a unique blend of technical expertise and strategic communication. Her leadership drives innovative learning solutions and brand outreach, seamlessly bridging hands-on education, technology-driven projects, and impactful storytelling to engage and inspire diverse audiences.",
-      social: {
-        linkedin: "https://in.linkedin.com/in/khushbu-mathur-95442722b",
-      }
+      
     }
   ];
 
