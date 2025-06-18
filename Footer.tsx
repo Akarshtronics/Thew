@@ -88,7 +88,7 @@ const Footer = () => {
                 {[
                   { name: "Home", path: "/" },
                   { name: "About Us", path: "/about" },
-                  { name: "Our Offerings", path: "/offerings" },
+                  { name: "Technologies Covered", path: "/offerings" },
                   { name: "Contact Us", path: "/contact" }
                 ].map((link, index) => (
                   <motion.li 
@@ -108,18 +108,18 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Services */}
+            {/* Technologies */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">Our Programs</h4>
+              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">Our Technologies</h4>
               <ul className="space-y-3">
                 {[
-                  { name: "Tinkering Lab", path: "/offerings/tinkering-lab" },
-                  { name: "3D Designing", path: "/offerings/3d-designing" },
+                  { name: "Robotics", path: "/offerings/robotics" },
+                  { name: "Coding", path: "/offerings/coding" },
                   { name: "Artificial Intelligence", path: "/offerings/artificial-intelligence" }
                 ].map((service, index) => (
                   <motion.li 

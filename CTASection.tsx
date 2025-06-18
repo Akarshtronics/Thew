@@ -41,7 +41,7 @@ const CTASection = () => {
               <ArrowRight className="ml-2 w-4 h-4" />
             </Link>
             <Link to="/offerings" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10">
-              Explore Our Programs
+              Explore Our Technologies
             </Link>
           </motion.div>
         </div>

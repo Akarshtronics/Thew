@@ -97,7 +97,7 @@ const Navbar = () => {
               About Us
             </NavLink>
             
-            {/* Offerings Dropdown */}
+            {/* Technologies Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => setShowDropdown(true)}
@@ -117,7 +117,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                Our Offerings
+                Technologies Covered
                 <ChevronDown className={`ml-1 w-4 h-4 transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`} />
               </NavLink>
               
@@ -131,18 +131,18 @@ const Navbar = () => {
                     className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-neutral-100 py-2 z-50"
                   >
                     <Link 
-                      to="/offerings/tinkering-lab" 
+                      to="/offerings/robotics" 
                       className="block px-4 py-3 text-neutral-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
                     >
-                      <div className="font-medium">Tinkering Lab</div>
-                      <div className="text-sm text-neutral-500">Hands-on electronics & robotics</div>
+                      <div className="font-medium">Robotics</div>
+                      <div className="text-sm text-neutral-500">Build and program intelligent robots</div>
                     </Link>
                     <Link 
-                      to="/offerings/3d-designing" 
+                      to="/offerings/coding" 
                       className="block px-4 py-3 text-neutral-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-200"
                     >
-                      <div className="font-medium">3D Designing</div>
-                      <div className="text-sm text-neutral-500">Digital modeling & 3D printing</div>
+                      <div className="font-medium">Coding</div>
+                      <div className="text-sm text-neutral-500">Master programming languages</div>
                     </Link>
                     <Link 
                       to="/offerings/artificial-intelligence" 
@@ -275,24 +275,24 @@ const Navbar = () => {
                 }
                 onClick={closeMenu}
               >
-                Our Offerings
+                Technologies Covered
               </NavLink>
               
-              {/* Mobile Offerings Submenu */}
+              {/* Mobile Technologies Submenu */}
               <div className="ml-4 space-y-1">
                 <Link 
-                  to="/offerings/tinkering-lab" 
+                  to="/offerings/robotics" 
                   className="block px-4 py-2 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                   onClick={closeMenu}
                 >
-                  → Tinkering Lab
+                  → Robotics
                 </Link>
                 <Link 
-                  to="/offerings/3d-designing" 
+                  to="/offerings/coding" 
                   className="block px-4 py-2 text-sm text-neutral-600 hover:text-primary-600 transition-colors"
                   onClick={closeMenu}
                 >
-                  → 3D Designing
+                  → Coding
                 </Link>
                 <Link 
                   to="/offerings/artificial-intelligence" 

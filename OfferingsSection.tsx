@@ -6,17 +6,20 @@ import { offerings } from './offerings';
 import { ArrowRight } from 'lucide-react';
 
 const OfferingsSection = () => {
+  // Show only first 6 technologies in the home page section
+  const displayedOfferings = offerings.slice(0, 6);
+
   return (
     <section className="section bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white">
       <div className="container-custom">
         <SectionTitle 
-          title="What We Offer"
+          title="Technologies Covered"
           subtitle="Discover our innovative STEM learning programs designed to inspire curiosity, foster creativity, and build future-ready skills."
           light
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {offerings.map((offering, index) => (
+          {displayedOfferings.map((offering, index) => (
             <OfferingCard 
               key={offering.id}
               {...offering}
@@ -36,7 +39,7 @@ const OfferingsSection = () => {
             to="/offerings" 
             className="inline-flex items-center btn bg-white text-primary-800 hover:bg-neutral-100"
           >
-            Explore All Offerings
+            Explore All Technologies
             <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </motion.div>
