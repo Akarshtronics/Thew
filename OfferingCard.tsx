@@ -30,7 +30,7 @@ const OfferingCard = ({
       whileHover={{ scale: 1.02 }}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden h-40 sm:h-44 lg:h-48">
+      <div className="relative overflow-hidden h-32 sm:h-36 lg:h-40">
         <motion.img 
           src={image} 
           alt={title}

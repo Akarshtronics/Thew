@@ -95,7 +95,7 @@ const AboutPage = () => {
               <img 
                 src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
                 alt="Team collaborating on a project" 
-                className="rounded-lg shadow-xl w-full h-64 sm:h-72 lg:h-80 object-cover"
+                className="rounded-lg shadow-xl w-full h-48 sm:h-56 lg:h-64 object-cover"
               />
             </motion.div>
           </div>
@@ -217,7 +217,7 @@ const AboutPage = () => {
                 
                 {/* Social Links */}
                 <div className="flex space-x-3">
-                  {member.social.linkedin && (
+                  {member.social?.linkedin && (
                     <a 
                       href={member.social.linkedin} 
                       className="text-neutral-400 hover:text-primary-500 transition-colors"
@@ -229,7 +229,7 @@ const AboutPage = () => {
                       </svg>
                     </a>
                   )}
-                  {member.social.twitter && (
+                  {member.social?.twitter && (
                     <a 
                       href={member.social.twitter} 
                       className="text-neutral-400 hover:text-primary-500 transition-colors"
@@ -241,7 +241,7 @@ const AboutPage = () => {
                       </svg>
                     </a>
                   )}
-                  {member.social.email && (
+                  {member.social?.email && (
                     <a 
                       href={`mailto:${member.social.email}`} 
                       className="text-neutral-400 hover:text-primary-500 transition-colors"
