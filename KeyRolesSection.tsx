@@ -77,7 +77,7 @@ const KeyRolesSection = () => {
               <img 
                 src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
                 alt="Student working on a STEM project" 
-                className="rounded-lg shadow-sm w-full h-32 sm:h-40 object-cover"
+                className="rounded-lg shadow-sm w-full h-48 sm:h-56 lg:h-64 object-cover"
               />
             </div>
           </div>
