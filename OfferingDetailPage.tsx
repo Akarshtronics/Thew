@@ -146,63 +146,8 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
         </div>
       </section>
 
-      {/* Program Structure */}
-      <section className="section bg-neutral-50">
-        <div className="container-custom">
-          <SectionTitle 
-            title="Program Structure"
-            subtitle="Our curriculum is designed to provide a comprehensive learning experience that balances theory and practice."
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {(offering.modules || [
-              {
-                title: "Fundamentals & Foundations",
-                description: "Introduction to core concepts, terminology, and basic principles. Establish a solid understanding of the subject matter.",
-                weeks: "Weeks 1-2"
-              },
-              {
-                title: "Tools & Techniques",
-                description: "Hands-on practice with essential tools and technologies. Develop practical skills through guided exercises.",
-                weeks: "Weeks 3-5"
-              },
-              {
-                title: "Advanced Concepts",
-                description: "Explore more complex topics and applications. Deepen understanding through challenging problems and scenarios.",
-                weeks: "Weeks 6-8"
-              },
-              {
-                title: "Project Development",
-                description: "Apply knowledge and skills to design and develop a capstone project. Work collaboratively with peers.",
-                weeks: "Weeks 9-11"
-              },
-              {
-                title: "Presentation & Showcase",
-                description: "Refine projects and prepare presentations. Showcase work to peers, parents, and community members.",
-                weeks: "Week 12"
-              }
-            ]).map((module, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white p-6 rounded-xl shadow-md"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="bg-primary-50 text-primary-600 text-sm font-medium px-3 py-1 rounded-full inline-block mb-4">
-                  {module.weeks}
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{module.title}</h3>
-                <p className="text-neutral-600">{module.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Student Projects */}
-      <section className="section">
+      <section className="section bg-neutral-50">
         <div className="container-custom">
           <SectionTitle 
             title="Featured Student Projects"
