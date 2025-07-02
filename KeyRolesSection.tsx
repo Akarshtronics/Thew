@@ -74,11 +74,13 @@ const KeyRolesSection = () => {
               </a>
             </div>
             <div className="md:w-1/3">
-              <img 
-                src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
-                alt="Student working on a STEM project" 
-                className="rounded-lg shadow-sm w-full h-48 sm:h-56 lg:h-64 object-cover"
-              />
+              <div className="bg-white p-2 rounded-xl shadow-sm">
+                <img 
+                  src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
+                  alt="Student working on a STEM project" 
+                  className="rounded-lg w-full h-48 sm:h-56 lg:h-64 object-contain"
+                />
+              </div>
             </div>
           </div>
         </motion.div>

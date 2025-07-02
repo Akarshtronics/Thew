@@ -30,16 +30,13 @@ const OfferingCard = ({
       whileHover={{ scale: 1.02 }}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden h-48 sm:h-56 lg:h-64">
+      <div className="relative overflow-hidden h-48 sm:h-56 lg:h-64 bg-neutral-50 p-4">
         <motion.img 
           src={image} 
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110 rounded-lg"
           whileHover={{ scale: 1.1 }}
         />
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
         
         {/* Icon Badge */}
         <motion.div 

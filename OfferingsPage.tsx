@@ -115,11 +115,13 @@ const OfferingsPage = () => {
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <img 
-                src="https://github.com/akarshpandey/twinc/blob/main/Twinc3.png?raw=true" 
-                alt="Students working on a project" 
-                className="rounded-lg shadow-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover"
-              />
+              <div className="bg-white p-4 rounded-2xl shadow-xl">
+                <img 
+                  src="https://github.com/akarshpandey/twinc/blob/main/Twinc3.png?raw=true" 
+                  alt="Students working on a project" 
+                  className="rounded-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
@@ -159,11 +161,11 @@ const OfferingsPage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="h-48 sm:h-56 lg:h-64 overflow-hidden">
+                <div className="h-48 sm:h-56 lg:h-64 overflow-hidden bg-neutral-50 p-4">
                   <img 
                     src={feature.image} 
                     alt={feature.title} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
                 <div className="p-6">

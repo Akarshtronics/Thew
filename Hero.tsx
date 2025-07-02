@@ -90,17 +90,14 @@ const Hero = () => {
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
             className="order-1 lg:order-2 relative"
           >
-            <div className="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl floating-animation max-w-lg mx-auto">
+            <div className="relative z-10 rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl floating-animation max-w-lg mx-auto bg-white p-2">
               <div className="aspect-w-4 aspect-h-3">
                 <img 
                   src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
                   alt="Students engaged in STEM learning activities" 
-                  className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover transform hover:scale-105 transition-transform duration-700" 
+                  className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain transform hover:scale-105 transition-transform duration-700 rounded-xl" 
                 />
               </div>
-              
-              {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
               
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 sm:w-12 sm:h-12 bg-accent-500 rounded-xl shadow-lg floating-animation" style={{animationDelay: '1s'}}></div>

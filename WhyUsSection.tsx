@@ -54,11 +54,11 @@ const WhyUsSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="relative z-10">
+            <div className="relative z-10 bg-white p-4 rounded-2xl shadow-xl">
               <img 
                 src="https://github.com/akarshpandey/twinc/blob/main/Methodology.jpeg?raw=true"
                 alt="Students collaborating on STEM projects" 
-                className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 rounded-lg shadow-xl object-cover"
+                className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 rounded-xl object-contain"
               />
             </div>
           </motion.div>

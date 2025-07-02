@@ -92,11 +92,13 @@ const AboutPage = () => {
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <img 
-                src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
-                alt="Team collaborating on a project" 
-                className="rounded-lg shadow-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-cover"
-              />
+              <div className="bg-white p-4 rounded-2xl shadow-xl">
+                <img 
+                  src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
+                  alt="Team collaborating on a project" 
+                  className="rounded-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
