@@ -132,11 +132,11 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
               transition={{ duration: 0.5 }}
               className="relative"
             >
-              <div className="relative z-10">
+              <div className="relative z-10 bg-white p-4 rounded-2xl shadow-xl">
                 <img 
                   src={offering.detailImage || offering.image} 
                   alt={offering.title} 
-                  className="rounded-lg shadow-xl w-full"
+                  className="rounded-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain"
                 />
               </div>
               <div className="absolute top-0 left-0 w-full h-full bg-accent-500 rounded-lg transform rotate-3 -z-10"></div>
@@ -235,11 +235,11 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-48 sm:h-56 lg:h-64 overflow-hidden bg-neutral-50 p-4">
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain rounded-lg"
                   />
                 </div>
                 <div className="p-6">
@@ -248,124 +248,6 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Instructor Section */}
-      <section className="section bg-neutral-50">
-        <div className="container-custom">
-          <SectionTitle 
-            title="Meet Your Instructors"
-            subtitle="Learn from industry professionals and experienced educators"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              
-            ].map((instructor, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white rounded-xl overflow-hidden shadow-md"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={instructor.image} 
-                    alt={instructor.name} 
-                    className="w-full h-full object-cover object-center"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-1">{instructor.name}</h3>
-                  <p className="text-primary-500 mb-3">{instructor.role}</p>
-                  <p className="text-neutral-600 text-sm">{instructor.bio}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Enrollment Section */}
-      <section className="section">
-        <div className="container-custom">
-          <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg border border-neutral-100">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">Ready to Enroll?</h2>
-                <p className="text-neutral-600 mb-6">
-                  Join our {offering.title} program and start your journey towards mastering essential skills for the future. 
-                  Limited spots available to ensure personalized attention and optimal learning experiences.
-                </p>
-                <div className="space-y-4 mb-8">
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Flexible scheduling options</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>All materials and equipment provided</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Certificate of completion</span>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" />
-                    <span>Ongoing access to online resources</span>
-                  </div>
-                </div>
-                <div className="flex flex-wrap gap-4">
-                  <Link to="/contact" className="btn btn-primary">
-                    Enroll Now
-                  </Link>
-                  <Link to="/contact" className="btn btn-outline">
-                    Request Information
-                  </Link>
-                </div>
-              </div>
-              
-              <div className="bg-neutral-50 p-6 rounded-xl">
-                <h3 className="text-xl font-semibold mb-6">Upcoming Sessions</h3>
-                <div className="space-y-4">
-                  {[
-                    {
-                      date: "September 15, 2025",
-                      time: "Mondays & Wednesdays, 4:00 PM - 6:00 PM",
-                      availability: "Limited Spots"
-                    },
-                    {
-                      date: "October 5, 2025",
-                      time: "Tuesdays & Thursdays, 5:00 PM - 7:00 PM",
-                      availability: "Available"
-                    },
-                    {
-                      date: "October 20, 2025",
-                      time: "Saturdays, 10:00 AM - 2:00 PM",
-                      availability: "Available"
-                    }
-                  ].map((session, index) => (
-                    <div key={index} className="border-b border-neutral-200 pb-4 last:border-0 last:pb-0">
-                      <div className="font-medium">{session.date}</div>
-                      <div className="text-neutral-600 text-sm">{session.time}</div>
-                      <div className={`text-sm mt-1 ${
-                        session.availability === "Limited Spots" 
-                          ? "text-warning-600" 
-                          : session.availability === "Available" 
-                          ? "text-success-600" 
-                          : "text-error-600"
-                      }`}>
-                        {session.availability}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
