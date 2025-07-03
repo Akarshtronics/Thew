@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 
 interface OfferingCardProps {
   id: number;
@@ -17,7 +16,6 @@ const OfferingCard = ({
   description, 
   icon, 
   image, 
-  slug, 
   delay = 0 
 }: OfferingCardProps) => {
   return (
@@ -62,28 +60,13 @@ const OfferingCard = ({
         </motion.h3>
         
         <motion.p 
-          className="text-sm sm:text-base text-neutral-600 mb-4 sm:mb-5 leading-relaxed line-clamp-3"
+          className="text-sm sm:text-base text-neutral-600 leading-relaxed line-clamp-3"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: delay + 0.3 }}
         >
           {description}
         </motion.p>
-        
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: delay + 0.4 }}
-        >
-          <Link 
-            to={`/offerings/${slug}`} 
-            className="inline-flex items-center text-primary-500 font-medium hover:text-primary-600 transition-all duration-300 group/link"
-          >
-            <span className="mr-2">Learn More</span>
-            <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1 group-hover:translate-x-2" />
-          </Link>
-        </motion.div>
       </div>
       
       {/* Hover Effect Overlay */}
