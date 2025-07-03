@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from './SectionTitle';
 import { offerings } from './offerings';
 import { Link } from 'react-router-dom';
-import { ChevronRight, CheckCircle, Calendar } from 'lucide-react';
+import { ChevronRight, CheckCircle } from 'lucide-react';
 import CTASection from './CTASection';
 
 interface OfferingDetailPageProps {
@@ -55,12 +55,12 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
               {offering.fullDescription || offering.description}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="btn btn-accent">
-                Enroll Now
-              </Link>
-              <a href="#program-details" className="btn bg-white/10 text-white hover:bg-white/20">
-                View Details
+              <a href="#program-details" className="btn btn-accent">
+                Learn More
               </a>
+              <Link to="/contact" className="btn bg-white/10 text-white hover:bg-white/20">
+                Contact Us
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -77,19 +77,9 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl font-bold mb-6">Program Overview</h2>
-              <p className="text-neutral-600 mb-6">
+              <p className="text-neutral-600 mb-8">
                 {offering.overview || "Our comprehensive program provides students with hands-on experience and theoretical knowledge, preparing them for future success in this exciting field."}
               </p>
-              
-              <div className="grid grid-cols-1 gap-4 mb-8">
-                <div className="flex items-center p-4 bg-neutral-50 rounded-lg">
-                  <Calendar className="w-5 h-5 text-primary-500 mr-3" />
-                  <div>
-                    <div className="text-sm text-neutral-500">Sessions</div>
-                    <div className="font-medium">Weekly Classes</div>
-                  </div>
-                </div>
-              </div>
               
               <h3 className="text-xl font-semibold mb-4">What You'll Learn</h3>
               <ul className="space-y-3 mb-8">
@@ -142,57 +132,6 @@ const OfferingDetailPage = ({ offeringId }: OfferingDetailPageProps) => {
               <div className="absolute top-0 left-0 w-full h-full bg-accent-500 rounded-lg transform rotate-3 -z-10"></div>
               <div className="absolute top-0 left-0 w-full h-full bg-primary-500 rounded-lg transform -rotate-3 -z-20"></div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Student Projects */}
-      <section className="section bg-neutral-50">
-        <div className="container-custom">
-          <SectionTitle 
-            title="Featured Student Projects"
-            subtitle="See what our students have created through our program"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Smart Home Automation",
-                description: "A student-built system that uses sensors and microcontrollers to automate lighting, temperature, and security in a model home.",
-                image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-              },
-              {
-                title: "Environmental Monitoring App",
-                description: "An application that collects and analyzes data from DIY environmental sensors to track local air quality and weather patterns.",
-                image: "https://images.pexels.com/photos/6044198/pexels-photo-6044198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-              },
-              {
-                title: "Interactive Learning Game",
-                description: "A game designed to teach younger students about basic scientific principles through interactive challenges and puzzles.",
-                image: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
-              }
-            ].map((project, index) => (
-              <motion.div 
-                key={index}
-                className="bg-white rounded-xl overflow-hidden shadow-md"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <div className="h-48 sm:h-56 lg:h-64 overflow-hidden bg-neutral-50 p-4">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-full object-contain rounded-lg"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                  <p className="text-neutral-600">{project.description}</p>
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
