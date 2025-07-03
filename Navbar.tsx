@@ -37,27 +37,28 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="flex items-center space-x-2 group" 
+            className="flex items-center space-x-3 group" 
             onClick={closeMenu}
           >
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, rotate: 5 }}
               whileTap={{ scale: 0.95 }}
-              className={`font-bold text-xl sm:text-2xl lg:text-3xl italic transition-all duration-300 ${
+              className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
                 scrolled 
-                  ? 'text-primary-500 hover:text-primary-600' 
-                  : 'text-white hover:text-neutral-200'
+                  ? 'border-primary-500 bg-primary-50 text-primary-600' 
+                  : 'border-white bg-white/10 text-white backdrop-blur-sm'
               }`}
             >
-              TWINC
-            </motion.div>
-            <motion.div
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              <span className="font-bold text-sm sm:text-base italic">TWINC</span>
+              
+              {/* Decorative dots around the circle */}
+              <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full transition-all duration-300 ${
                 scrolled ? 'bg-accent-500' : 'bg-accent-400'
-              }`}
-              animate={{ scale: [1, 1.2, 1] }}
-              transition={{ duration: 2, repeat: Infinity }}
-            />
+              }`}></div>
+              <div className={`absolute -bottom-1 -left-1 w-2 h-2 rounded-full transition-all duration-300 ${
+                scrolled ? 'bg-secondary-500' : 'bg-secondary-400'
+              }`}></div>
+            </motion.div>
           </Link>
 
           {/* Desktop Navigation */}
