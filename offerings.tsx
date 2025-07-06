@@ -55,8 +55,8 @@ export const offerings: Offering[] = [
     fullDescription: "Our Coding program teaches students essential programming skills using modern languages and development tools, preparing them for careers in technology.",
     overview: "Students learn programming fundamentals through engaging projects, developing logical thinking and computational skills while creating their own applications and games.",
     icon: <Code className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
-    detailImage: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ss3oWD9yq54DJqIxelLghj0A_7uMXbpRJA&s",
+    detailImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ss3oWD9yq54DJqIxelLghj0A_7uMXbpRJA&s",
     slug: "coding",
     learningOutcomes: [
       "Master programming fundamentals and syntax",
