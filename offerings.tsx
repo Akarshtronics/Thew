@@ -73,8 +73,8 @@ export const offerings: Offering[] = [
     fullDescription: "Our Artificial Intelligence program introduces students to the exciting world of AI and machine learning through interactive projects and hands-on experiences.",
     overview: "This program demystifies artificial intelligence by breaking down complex concepts into accessible learning modules. Students explore how AI systems work, develop their own machine learning models, and apply AI to solve real-world problems.",
     icon: <Brain className="w-5 h-5 text-primary-500" />,
-    image: "https://imgs.search.brave.com/Ikz32wu9V2CXE00GRsgiOk-unYEXDhKWOnBFh7vgVIk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ4/MzIyNDQ4OC9waG90/by9pbnRlcm5ldC10/ZWNobm9sb2d5LWFu/ZC1wZW9wbGVzLW5l/dHdvcmtzLXVzZS1h/aS10by1oZWxwLXdp/dGgtd29yay1haS1s/ZWFybmluZy1vci1h/cnRpZmljaWFsLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1n/YWJxUGYzaFEwSDc0/ZVRQTzktRm04QTgz/WlluMHptT0tNYzVz/WjhlRTdBPQ",
-    detailImage: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuuVMSLXLl41ahaesEM-A8oZS5TfZ66pKyQ&s",
+    detailImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuuVMSLXLl41ahaesEM-A8oZS5TfZ66pKyQ&s",
     slug: "artificial-intelligence",
     learningOutcomes: [
       "Understand fundamental AI concepts and terminology",
