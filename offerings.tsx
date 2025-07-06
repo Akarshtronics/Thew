@@ -37,8 +37,8 @@ export const offerings: Offering[] = [
     fullDescription: "Our Robotics program introduces students to the exciting world of autonomous machines, combining mechanical engineering, electronics, and programming to create intelligent systems.",
     overview: "Students learn to design, build, and program robots that can perform complex tasks. Through hands-on projects, they explore sensors, actuators, and control systems while developing problem-solving skills.",
     icon: <Bot className="w-5 h-5 text-primary-500" />,
-    image: "https://github.com/akarshpandey/twinc/blob/main/2.jpeg?raw=true",
-    detailImage: "https://github.com/akarshpandey/twinc/blob/main/2.jpeg?raw=true",
+    image: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=800",
+    detailImage: "https://images.pexels.com/photos/8566525/pexels-photo-8566525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "robotics",
     learningOutcomes: [
       "Understand robotics fundamentals and mechanical systems",
@@ -55,8 +55,8 @@ export const offerings: Offering[] = [
     fullDescription: "Our Coding program teaches students essential programming skills using modern languages and development tools, preparing them for careers in technology.",
     overview: "Students learn programming fundamentals through engaging projects, developing logical thinking and computational skills while creating their own applications and games.",
     icon: <Code className="w-5 h-5 text-primary-500" />,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ss3oWD9yq54DJqIxelLghj0A_7uMXbpRJA&s",
-    detailImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ss3oWD9yq54DJqIxelLghj0A_7uMXbpRJA&s",
+    image: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800",
+    detailImage: "https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "coding",
     learningOutcomes: [
       "Master programming fundamentals and syntax",
@@ -73,8 +73,8 @@ export const offerings: Offering[] = [
     fullDescription: "Our Artificial Intelligence program introduces students to the exciting world of AI and machine learning through interactive projects and hands-on experiences.",
     overview: "This program demystifies artificial intelligence by breaking down complex concepts into accessible learning modules. Students explore how AI systems work, develop their own machine learning models, and apply AI to solve real-world problems.",
     icon: <Brain className="w-5 h-5 text-primary-500" />,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuuVMSLXLl41ahaesEM-A8oZS5TfZ66pKyQ&s",
-    detailImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAuuVMSLXLl41ahaesEM-A8oZS5TfZ66pKyQ&s",
+    image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=800",
+    detailImage: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "artificial-intelligence",
     learningOutcomes: [
       "Understand fundamental AI concepts and terminology",
@@ -92,7 +92,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our STEAM Lab combines Science, Technology, Engineering, Arts, and Mathematics in an integrated learning environment that fosters creativity and innovation.",
     overview: "Students work on interdisciplinary projects that combine technical skills with creative thinking, developing both analytical and artistic abilities through collaborative learning experiences.",
     icon: <Flask className="w-5 h-5 text-primary-500" />,
-    image: "https://raw.githubusercontent.com/akarshpandey/twinc/refs/heads/main/3.jpeg",
+    image: "https://images.pexels.com/photos/8566525/pexels-photo-8566525.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/8566525/pexels-photo-8566525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "steam-lab",
     learningOutcomes: [
@@ -110,7 +110,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our 3D Designing program teaches students to transform ideas into digital models and physical objects using industry-standard design software and cutting-edge 3D printing technology.",
     overview: "Students learn the fundamentals of 3D modeling and design while gaining hands-on experience with CAD software and 3D printing technology. Through guided projects, students develop spatial reasoning and design thinking skills.",
     icon: <Cube className="w-5 h-5 text-primary-500" />,
-    image: "https://github.com/akarshpandey/twinc/blob/main/11.jpeg?raw=true",
+    image: "https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "3d-designing",
     learningOutcomes: [
@@ -129,7 +129,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our IoT program teaches students to create connected devices that can communicate over the internet, enabling smart home automation and data collection systems.",
     overview: "Students learn to build and program IoT devices using sensors, microcontrollers, and wireless communication. They explore how everyday objects can be made 'smart' through connectivity and data analysis.",
     icon: <Wifi className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "iot",
     learningOutcomes: [
@@ -148,7 +148,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our Drone program combines aerospace engineering, programming, and piloting skills to teach students about unmanned aerial vehicle technology and applications.",
     overview: "Students learn to build, program, and operate drones while understanding flight dynamics, navigation systems, and real-world applications in various industries.",
     icon: <Plane className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "drone",
     learningOutcomes: [
@@ -167,7 +167,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our Electronics program provides a comprehensive introduction to electronic circuits, components, and systems, building a strong foundation for advanced technology projects.",
     overview: "Students learn about electronic components, circuit design, and digital systems through practical experiments and projects, developing skills essential for modern technology development.",
     icon: <Zap className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/163100/circuit-circuit-board-resistor-computer-163100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "electronics",
     learningOutcomes: [
@@ -186,7 +186,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our Scratch program introduces young learners to programming concepts through a visual, block-based coding environment that makes learning fun and accessible.",
     overview: "Students use Scratch's drag-and-drop interface to create interactive projects while learning fundamental programming concepts like loops, conditionals, and variables in an engaging way.",
     icon: <Gamepad2 className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=800",
     detailImage: "https://images.pexels.com/photos/4974915/pexels-photo-4974915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "scratch",
     learningOutcomes: [
