@@ -74,21 +74,6 @@ const OfferingCard = ({
         >
           {description}
         </motion.p>
-        
-        {/* Learn More Button */}
-        <motion.div 
-          className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          initial={{ y: 10 }}
-          whileInView={{ y: 0 }}
-          transition={{ duration: 0.3, delay: delay + 0.4 }}
-        >
-          <span className="text-primary-500 text-sm font-medium flex items-center">
-            Learn More 
-            <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </span>
-        </motion.div>
       </div>
       
       {/* Hover Effect Overlay */}
