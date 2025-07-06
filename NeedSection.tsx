@@ -43,12 +43,30 @@ const NeedSection = () => {
   ];
 
   return (
-    <section className="section bg-gradient-to-br from-neutral-50 via-white to-neutral-50 relative overflow-hidden">
-      {/* Background Decorations */}
+    <section className="section bg-gradient-to-br from-neutral-50 via-white to-primary-50 relative overflow-hidden">
+      {/* Enhanced Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-primary-100 rounded-full opacity-30 floating-animation"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-secondary-100 rounded-full opacity-40 floating-animation" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-accent-100 rounded-full opacity-50 floating-animation" style={{animationDelay: '4s'}}></div>
+        {/* Large decorative circles */}
+        <div className="absolute top-20 left-10 w-40 h-40 bg-primary-100 rounded-full opacity-30 floating-animation"></div>
+        <div className="absolute bottom-20 right-10 w-32 h-32 bg-secondary-100 rounded-full opacity-40 floating-animation" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-accent-100 rounded-full opacity-50 floating-animation" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-1/3 right-1/4 w-28 h-28 bg-success-100 rounded-full opacity-35 floating-animation" style={{animationDelay: '1s'}}></div>
+        
+        {/* Geometric shapes */}
+        <div className="absolute top-40 right-40 w-8 h-8 bg-primary-200 opacity-40 rotate-45 floating-animation" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-60 left-40 w-6 h-6 bg-secondary-200 opacity-50 rounded-full pulse-animation"></div>
+        <div className="absolute top-2/3 right-1/3 w-10 h-10 bg-accent-200 opacity-30 rotate-12 floating-animation" style={{animationDelay: '2.5s'}}></div>
+        
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 bg-pattern opacity-3"></div>
+        
+        {/* Gradient overlays for depth */}
+        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-white/80 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-primary-50/80 to-transparent"></div>
+        
+        {/* Diagonal accent lines */}
+        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary-200 via-secondary-200 to-accent-200 opacity-20"></div>
+        <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-accent-200 via-primary-200 to-secondary-200 opacity-20"></div>
       </div>
 
       <div className="container-custom relative z-10">
