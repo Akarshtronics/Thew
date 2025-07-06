@@ -5,6 +5,7 @@ import AboutPage from '../AboutPage';
 import OfferingsPage from '../OfferingsPage';
 import ContactPage from '../ContactPage';
 import OfferingDetailPage from '../OfferingDetailPage';
+import InquiryDashboard from '../InquiryDashboard';
 import { offerings } from '../offerings';
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
         ))}
         <Route path="contact" element={<ContactPage />} />
       </Route>
+      {/* Admin Dashboard Route - Outside of main layout */}
+      <Route path="/admin/inquiries" element={<InquiryDashboard />} />
     </Routes>
   );
 }
