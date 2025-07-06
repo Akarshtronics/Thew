@@ -37,7 +37,7 @@ export const offerings: Offering[] = [
     fullDescription: "Our Robotics program introduces students to the exciting world of autonomous machines, combining mechanical engineering, electronics, and programming to create intelligent systems.",
     overview: "Students learn to design, build, and program robots that can perform complex tasks. Through hands-on projects, they explore sensors, actuators, and control systems while developing problem-solving skills.",
     icon: <Bot className="w-5 h-5 text-primary-500" />,
-    image: "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+    image: "https://github.com/akarshpandey/twinc/blob/main/2.jpeg?raw=true",
     detailImage: "https://images.pexels.com/photos/8566525/pexels-photo-8566525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
     slug: "robotics",
     learningOutcomes: [
