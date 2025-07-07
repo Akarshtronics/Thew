@@ -41,21 +41,23 @@ const Navbar = () => {
             onClick={closeMenu}
           >
             <motion.div
-              whileHover={{ scale: 1.05, rotate: 5 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 flex items-center justify-center transition-all duration-300 ${
-                scrolled 
-                  ? 'border-primary-500 bg-primary-50 text-primary-600' 
-                  : 'border-white bg-white/10 text-white backdrop-blur-sm'
-              }`}
+              className="relative"
             >
-              <span className="font-bold text-sm sm:text-base italic">TWINC</span>
+              <span className={`font-bold text-2xl sm:text-3xl italic transition-all duration-300 ${
+                scrolled 
+                  ? 'text-primary-600' 
+                  : 'text-white'
+              }`}>
+                TWINC
+              </span>
               
-              {/* Decorative dots around the circle */}
-              <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full transition-all duration-300 ${
+              {/* Decorative dots */}
+              <div className={`absolute -top-1 -right-1 w-2 h-2 rounded-full transition-all duration-300 ${
                 scrolled ? 'bg-accent-500' : 'bg-accent-400'
               }`}></div>
-              <div className={`absolute -bottom-1 -left-1 w-2 h-2 rounded-full transition-all duration-300 ${
+              <div className={`absolute -bottom-1 -left-1 w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                 scrolled ? 'bg-secondary-500' : 'bg-secondary-400'
               }`}></div>
             </motion.div>
