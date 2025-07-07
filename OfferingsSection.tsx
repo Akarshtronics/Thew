@@ -6,7 +6,7 @@ import { offerings } from './offerings';
 import { ArrowRight } from 'lucide-react';
 
 const OfferingsSection = () => {
-  // Show only first 6 technologies in the home page section
+  // Show only first 6 courses in the home page section
   const displayedOfferings = offerings.slice(0, 6);
 
   return (
@@ -34,7 +34,7 @@ const OfferingsSection = () => {
 
       <div className="container-custom relative z-10">
         <SectionTitle 
-          title="Technologies Covered"
+          title="Our Courses"
           subtitle="Discover our innovative STEM learning programs designed to inspire curiosity, foster creativity, and build future-ready skills."
           light
         />
@@ -60,7 +60,7 @@ const OfferingsSection = () => {
             to="/offerings" 
             className="inline-flex items-center btn bg-white text-primary-800 hover:bg-neutral-100"
           >
-            Explore All Technologies
+            Explore All Courses
             <ArrowRight className="ml-2 w-4 h-4" />
           </Link>
         </motion.div>

@@ -88,7 +88,7 @@ const Footer = () => {
                 {[
                   { name: "Home", path: "/" },
                   { name: "About Us", path: "/about" },
-                  { name: "Technologies Covered", path: "/offerings" },
+                  { name: "Courses", path: "/offerings" },
                   { name: "Contact Us", path: "/contact" }
                 ].map((link, index) => (
                   <motion.li 
@@ -108,14 +108,14 @@ const Footer = () => {
               </ul>
             </motion.div>
 
-            {/* Technologies */}
+            {/* Our Courses */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">Our Technologies</h4>
+              <h4 className="text-lg sm:text-xl font-semibold mb-6 text-white">Our Courses</h4>
               <ul className="space-y-3">
                 {[
                   { name: "Robotics", path: "/offerings/robotics" },

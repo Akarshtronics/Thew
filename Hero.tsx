@@ -66,7 +66,7 @@ const Hero = () => {
                 className="btn btn-accent group relative overflow-hidden"
               >
                 <span className="relative z-10 flex items-center">
-                  Explore Our Offerings
+                  Explore Our Courses
                   <ArrowRight className="ml-2 w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" />
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-accent-600 to-accent-400 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
@@ -95,7 +95,7 @@ const Hero = () => {
                 <img 
                   src="https://github.com/akarshpandey/twinc/blob/main/WhatsApp%20Image%202025-06-02%20at%209.30.21%20PM.jpeg?raw=true" 
                   alt="Students engaged in STEM learning activities" 
-                  className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain transform hover:scale-105 transition-transform duration-700 rounded-xl" 
+                  className="rounded-xl w-full h-64 sm:h-72 lg:h-80 xl:h-96 object-contain transform hover:scale-105 transition-transform duration-700" 
                 />
               </div>
               

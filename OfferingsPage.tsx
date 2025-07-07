@@ -8,7 +8,7 @@ import CTASection from './CTASection';
 
 const OfferingsPage = () => {
   React.useEffect(() => {
-    document.title = 'Technologies Covered | The World of Innovation & Creativity';
+    document.title = 'Courses | The World of Innovation & Creativity';
   }, []);
 
   return (
@@ -27,7 +27,7 @@ const OfferingsPage = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Technologies Covered</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Courses</h1>
             <p className="text-xl text-neutral-200">
               Discover our innovative STEM programs designed to inspire curiosity, 
               foster creativity, and build future-ready skills.
@@ -36,11 +36,11 @@ const OfferingsPage = () => {
         </div>
       </section>
 
-      {/* Main Technologies Section */}
+      {/* Main Courses Section */}
       <section className="section">
         <div className="container-custom">
           <SectionTitle 
-            title="Explore Our Technologies"
+            title="Explore Our Courses"
             subtitle="Each program is carefully designed to provide engaging, hands-on learning experiences that develop critical STEM skills."
           />
 

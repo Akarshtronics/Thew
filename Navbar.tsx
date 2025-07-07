@@ -100,7 +100,7 @@ const Navbar = () => {
               About Us
             </NavLink>
             
-            {/* Technologies Dropdown */}
+            {/* Courses Dropdown */}
             <div 
               className="relative"
               onMouseEnter={() => setShowDropdown(true)}
@@ -120,7 +120,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                Technologies Covered
+                Courses
                 <ChevronDown className={`ml-1 w-4 h-4 transition-transform duration-200 ${showDropdown ? 'rotate-180' : ''}`} />
               </NavLink>
               
@@ -278,10 +278,10 @@ const Navbar = () => {
                 }
                 onClick={closeMenu}
               >
-                Technologies Covered
+                Courses
               </NavLink>
               
-              {/* Mobile Technologies Submenu */}
+              {/* Mobile Courses Submenu */}
               <div className="ml-4 space-y-1">
                 <Link 
                   to="/offerings/robotics" 
