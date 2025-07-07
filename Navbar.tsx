@@ -45,7 +45,7 @@ const Navbar = () => {
               whileTap={{ scale: 0.95 }}
               className="relative"
             >
-              <span className={`font-bold text-2xl sm:text-3xl italic transition-all duration-300 ${
+              <span className={`font-bold text-lg sm:text-xl italic transition-all duration-300 ${
                 scrolled 
                   ? 'text-primary-600' 
                   : 'text-white'
@@ -54,10 +54,10 @@ const Navbar = () => {
               </span>
               
               {/* Decorative dots */}
-              <div className={`absolute -top-1 -right-1 w-2 h-2 rounded-full transition-all duration-300 ${
+              <div className={`absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                 scrolled ? 'bg-accent-500' : 'bg-accent-400'
               }`}></div>
-              <div className={`absolute -bottom-1 -left-1 w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+              <div className={`absolute -bottom-0.5 -left-0.5 w-1 h-1 rounded-full transition-all duration-300 ${
                 scrolled ? 'bg-secondary-500' : 'bg-secondary-400'
               }`}></div>
             </motion.div>
