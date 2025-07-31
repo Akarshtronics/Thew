@@ -56,8 +56,7 @@ const WhyUsSection = () => {
           >
             <div className="relative z-10 bg-white p-4 rounded-2xl shadow-xl">
               <img 
-                src="https://github.com/akarshpandey/twinc/blob/main/Methodology.jpeg?raw=true"
-                alt="Students collaborating on STEM projects" 
+                src="https://github.com/akarshpandey/twinc/blob/main/ChatGPT%20Image%20Jul%2031,%202025,%2008_01_12%20PM.png?raw=true" 
                 className="w-full h-64 sm:h-72 lg:h-80 xl:h-96 rounded-xl object-contain"
               />
             </div>
